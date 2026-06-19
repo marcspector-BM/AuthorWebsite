@@ -3,7 +3,26 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Author Sondra Hardy</title>
+    <title>Sondra J. Hardy — Author of Dark Psychological Fiction</title>
+    <meta name="description" content="Official website of Sondra J. Hardy, author of Audine's Story, Pieces Revised Revisited, and Sistahs Tarot Readers. Dark psychological fiction set in 1930s America.">
+    <meta name="keywords" content="Sondra J. Hardy, author, psychological fiction, historical fiction, Audine's Story, Pieces Revised Revisited, Sistahs Tarot Readers, African American literature, 1930s fiction, New Orleans fiction">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.sondrajhardy.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sondra J. Hardy — Author of Dark Psychological Fiction">
+    <meta property="og:description" content="Official website of Sondra J. Hardy, author of Audine's Story, Pieces Revised Revisited, and Sistahs Tarot Readers. Dark psychological fiction set in 1930s America.">
+    <meta property="og:url" content="https://www.sondrajhardy.com/">
+    <meta property="og:image" content="https://www.sondrajhardy.com/Sondra%20J.%20Hardy's%20Logo.png">
+    <meta property="og:site_name" content="Sondra J. Hardy">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sondra J. Hardy — Author of Dark Psychological Fiction">
+    <meta name="twitter:description" content="Official website of Sondra J. Hardy, author of Audine's Story, Pieces Revised Revisited, and Sistahs Tarot Readers.">
+    <meta name="twitter:image" content="https://www.sondrajhardy.com/Sondra%20J.%20Hardy's%20Logo.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@300;400;500;700&display=swap"
@@ -16,7 +35,7 @@
 
 <header>
     <div class="nav">
-        <div class="logo">Sondra J. Hardy</div>
+        <a href="#" class="logo-link"><img src="Sondra J. Hardy's Logo.png" alt="Sondra J. Hardy Logo" class="logo-img"></a>
         <div class="nav-right">
             <nav id="nav">
                 <a href="#books" class="animate-link">Books</a>
@@ -26,20 +45,22 @@
                 <a href="#about" class="animate-link">About</a>
                 <a href="#contact" class="animate-link">Contact</a>
             </nav>
-<!--            <div class="menu" onclick="toggle()">☰</div>-->
+            <button class="menu" onclick="toggle()" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
         </div>
     </div>
 </header>
 
 <section class="hero">
-    <!-- DECORATIVE SHAPES -->
-    <div style="position:absolute; top:20%; left:10%; width:100px; height:100px; border:1px solid var(--accent-pink); border-radius:50%; opacity:0.2; animation: float 6s ease-in-out infinite;"></div>
-    <div style="position:absolute; bottom:20%; right:15%; width:150px; height:150px; border:1px solid var(--accent-blue); transform:rotate(45deg); opacity:0.2; animation: float 8s ease-in-out infinite reverse;"></div>
-    
-    <div>
-        <h1>Stories built on silence,<br/>secrets, and collapse.</h1>
-        <p>A minimalist author platform for psychological fiction, emotional tension, and cinematic storytelling.</p>
-        <a class="cta animate-link" href="#books">Explore Books</a>
+    <div class="hero-inner-split">
+        <div class="hero-content">
+            <h2 class="sub-heading">Featured Book</h2>
+            <h1>Audine’s Story</h1>
+            <p>Follows Audine Collins on her 1933 journey from New Orleans to Chicago. A complex character study of ambition, bitterness, and the consequences of personal choices.</p>
+            <a class="cta animate-link" href="#books">Explore Books</a>
+        </div>
+        <div class="hero-image">
+            <img src="Book 1.jpg" alt="Audine’s Story">
+        </div>
     </div>
 </section>
 
@@ -79,7 +100,7 @@
                 <img src="Book%203.jpg" alt="Sistahs Tarot Readers">
             </div>
             <div class="book-content">
-                <h3>Sistahs Tarot Readers</h3>
+                <h3>Sistahs Of The Tarot</h3>
                 <p>A narrative linking three tarot readers across Chicago, New Orleans, and Harlem during the 1930s and
                     1950s, exploring spiritual counsel, hidden truths, and community life.</p>
                 <a href="https://www.amazon.com/Sistahs-Tarot-Readers-Sondra-Hardy/dp/B0GHT4K85L" target="_blank">Buy on
@@ -118,9 +139,16 @@
 
 <section id="press" class="press">
     <div class="section-title">In the News</div>
-    <div class="press-content">
-        <a href="https://nyweekly.com/book/sondra-j-hardy-and-the-expanding-world-of-audine/" target="_blank">"Sondra J.
-            Hardy and the Expanding World of Audine" - NY Weekly</a>
+    <div class="press-card">
+        <div class="press-image">
+            <img src="https://nyweekly.com/wp-content/uploads/2026/02/image2-16.jpg" alt="NY Weekly Feature">
+        </div>
+        <div class="press-details">
+            <h3>New York Weekly</h3>
+            <h4>"Sondra J. Hardy and the Expanding World of Audine"</h4>
+            <p>Sondra J. Hardy writes with a storyteller’s patience and a historian’s eye for detail. Her novels move through New Orleans, Chicago, and Harlem...</p>
+            <a href="https://nyweekly.com/book/sondra-j-hardy-and-the-expanding-world-of-audine/" target="_blank" class="cta press-cta">Read Full Article</a>
+        </div>
     </div>
 </section>
 
@@ -132,20 +160,28 @@
 </section>
 
 <section id="about" class="about">
-    <div class="section-title">About the Author</div>
-    <p>
-        Sondra J. Hardy, born and raised in West Haven, Connecticut, is a writer whose work traces the hidden tensions
-        within families and communities. A graduate of West Haven High School and Bay State College, where she earned
-        the Beatrice Ruderman Award, Hardy brings a historian’s eye and a storyteller’s patience to her narratives. Her
-        literary work, influenced by authors like Walter Mosley, explores themes of secrecy, betrayal, and faith across
-        interconnected urban landscapes.
-    </p>
+    <div class="about-inner-split">
+        <div class="about-image">
+            <img src="Sondra J. Hardy's Logo.png" alt="Author Logo">
+        </div>
+        <div class="about-content">
+            <div class="section-title" style="margin-inline: 0; margin-bottom: 20px;">About the Author</div>
+            <h2 style="font-family: 'Archivo Black', sans-serif; font-size: 32px; margin-bottom: 20px;">Sondra J. Hardy</h2>
+            <p>
+                Sondra J. Hardy, born and raised in West Haven, Connecticut, is a writer whose work traces the hidden tensions
+                within families and communities. A graduate of West Haven High School and Bay State College, where she earned
+                the Beatrice Ruderman Award, Hardy brings a historian’s eye and a storyteller’s patience to her narratives. Her
+                literary work, influenced by authors like Walter Mosley, explores themes of secrecy, betrayal, and faith across
+                interconnected urban landscapes.
+            </p>
+        </div>
+    </div>
 </section>
 
 <section id="contact" class="contact">
     <div class="section-title">Contact</div>
     <p>For rights, collaborations, and media inquiries.</p>
-    <button onclick="window.location.href='mailto:author@example.com'">Email</button>
+    <button onclick="window.location.href='mailto:hardysondra88@gmail.com'">Email</button>
 </section>
 
 <footer>

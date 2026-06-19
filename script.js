@@ -5,13 +5,37 @@ links.forEach(link => {
         e.preventDefault();
         const target = document.querySelector(link.getAttribute('href'));
         target.scrollIntoView({ behavior: 'smooth' });
+        // Close mobile menu on link click
+        const nav = document.getElementById("nav");
+        const menuBtn = document.querySelector(".menu");
+        if (nav.classList.contains("is-open")) {
+            nav.classList.remove("is-open");
+            if (menuBtn) menuBtn.setAttribute("aria-expanded", "false");
+        }
     });
 });
 
 // MOBILE MENU
-function toggle(){
-    document.getElementById("nav").classList.toggle("is-open");
+function toggle() {
+    const nav = document.getElementById("nav");
+    const menuBtn = document.querySelector(".menu");
+    nav.classList.toggle("is-open");
+    const isOpen = nav.classList.contains("is-open");
+    if (menuBtn) menuBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
 }
+
+// Close menu on Escape key
+document.addEventListener("keydown", e => {
+    if (e.key === "Escape") {
+        const nav = document.getElementById("nav");
+        const menuBtn = document.querySelector(".menu");
+        if (nav.classList.contains("is-open")) {
+            nav.classList.remove("is-open");
+            if (menuBtn) menuBtn.setAttribute("aria-expanded", "false");
+            if (menuBtn) menuBtn.focus();
+        }
+    }
+});
 
 // ENTRANCE ANIMATIONS
 const observerOptions = {
@@ -34,11 +58,12 @@ document.querySelectorAll('section, .book, .review, .award').forEach(el => {
     observer.observe(el);
 });
 
-// MOUSE FOLLOW GLOW
-document.addEventListener('mousemove', (e) => {
-    const x = e.clientX / window.innerWidth * 100;
-    const y = e.clientY / window.innerHeight * 100;
-    document.body.style.setProperty('--mouse-x', `${x}%`);
-    document.body.style.setProperty('--mouse-y', `${y}%`);
-});
-
+// MOUSE FOLLOW GLOW (only on devices that support hover)
+if (window.matchMedia('(hover: hover)').matches) {
+    document.addEventListener('mousemove', (e) => {
+        const x = e.clientX / window.innerWidth * 100;
+        const y = e.clientY / window.innerHeight * 100;
+        document.body.style.setProperty('--mouse-x', `${x}%`);
+        document.body.style.setProperty('--mouse-y', `${y}%`);
+    });
+}
