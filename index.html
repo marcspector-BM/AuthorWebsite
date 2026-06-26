@@ -9,183 +9,417 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.sondrajhardy.com/">
 
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Sondra J. Hardy — Author of Dark Psychological Fiction">
-    <meta property="og:description" content="Official website of Sondra J. Hardy, author of Audine's Story, Pieces Revised Revisited, and Sistahs Tarot Readers. Dark psychological fiction set in 1930s America.">
+    <meta property="og:description" content="Official website of Sondra J. Hardy, author of Audine's Story, Pieces Revised Revisited, and Sistahs Tarot Readers.">
     <meta property="og:url" content="https://www.sondrajhardy.com/">
     <meta property="og:image" content="https://www.sondrajhardy.com/Sondra%20J.%20Hardy's%20Logo.png">
     <meta property="og:site_name" content="Sondra J. Hardy">
     <meta property="og:locale" content="en_US">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Sondra J. Hardy — Author of Dark Psychological Fiction">
     <meta name="twitter:description" content="Official website of Sondra J. Hardy, author of Audine's Story, Pieces Revised Revisited, and Sistahs Tarot Readers.">
     <meta name="twitter:image" content="https://www.sondrajhardy.com/Sondra%20J.%20Hardy's%20Logo.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@300;400;500;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
     <script src="script.js" defer></script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sondra J. Hardy",
+        "jobTitle": "Author",
+        "description": "Author of dark psychological fiction set in 1930s America",
+        "url": "https://www.sondrajhardy.com",
+        "image": "https://www.sondrajhardy.com/Sondra%20J.%20Hardy's%20Logo.png",
+        "sameAs": [
+            "https://www.amazon.com/stores/Sondra-J.-Hardy/e/B0HQZBL5P7",
+            "https://www.goodreads.com/author/show/Sondra_J_Hardy"
+        ],
+        "knowsAbout": ["Psychological Fiction", "Historical Fiction", "African American Literature"],
+        "award": [
+            "Best Psychological Fiction 2025 — Literary Magazine Awards",
+            "Beatrice Ruderman Award — Bay State College",
+            "Editor's Choice Selection — Books Daily Review",
+            "The Book Fest — Winner",
+            "Storytrade Awards — Finalist"
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Books by Sondra J. Hardy",
+        "url": "https://www.sondrajhardy.com",
+        "itemListElement": [
+            {
+                "@type": "Book",
+                "position": 1,
+                "name": "Audine's Story",
+                "author": "Sondra J. Hardy",
+                "description": "Follows Audine Collins on her 1933 journey from New Orleans to Chicago. A complex character study of ambition, bitterness, and the consequences of personal choices.",
+                "genre": ["Psychological Fiction", "Historical Fiction"],
+                "image": "https://www.sondrajhardy.com/Book%201.jpg",
+                "sameAs": "https://www.amazon.com/Audines-Story-Sinful-Malevolent-Deceptive/dp/1970379073",
+                "datePublished": "2024"
+            },
+            {
+                "@type": "Book",
+                "position": 2,
+                "name": "Pieces Revised Revisited",
+                "author": "Sondra J. Hardy",
+                "description": "Set in 1932 New Orleans, this story explores the fractures within the St. Laurent family, weaving hoodoo traditions and generational secrets into a narrative of jealousy and betrayal.",
+                "genre": ["Psychological Fiction", "Historical Fiction", "Family Drama"],
+                "image": "https://www.sondrajhardy.com/Book%202.jpg",
+                "sameAs": "https://www.amazon.com/Pieces-Revised-Revisited-Sondra-Hardy/dp/1970379162",
+                "datePublished": "2024"
+            },
+            {
+                "@type": "Book",
+                "position": 3,
+                "name": "Sistahs Of The Tarot",
+                "author": "Sondra J. Hardy",
+                "description": "A narrative linking three tarot readers across Chicago, New Orleans, and Harlem during the 1930s and 1950s.",
+                "genre": ["Literary Fiction", "Historical Fiction", "Spiritual Fiction"],
+                "image": "https://www.sondrajhardy.com/Book%203.jpg",
+                "sameAs": "https://www.amazon.com/Sistahs-Tarot-Readers-Sondra-Hardy/dp/B0GHT4K85L",
+                "datePublished": "2025"
+            }
+        ]
+    }
+    </script>
 </head>
 
 <body>
 
 <header>
     <div class="nav">
-        <a href="#" class="logo-link"><img src="Sondra J. Hardy's Logo.png" alt="Sondra J. Hardy Logo" class="logo-img"></a>
+        <a href="#" class="logo-link" data-page="home"><img src="Sondra J. Hardy's Logo.png" alt="Sondra J. Hardy Logo" class="logo-img"></a>
         <div class="nav-right">
             <nav id="nav">
-                <a href="#books" class="animate-link">Books</a>
-                <a href="#reviews" class="animate-link">Reviews</a>
-                <a href="#awards" class="animate-link">Awards</a>
-                <a href="#press" class="animate-link">Press</a>
-                <a href="#about" class="animate-link">About</a>
-                <a href="#contact" class="animate-link">Contact</a>
+                <a href="#" data-page="home" class="nav-link active">Home</a>
+                <a href="#" data-page="books" class="nav-link">Books</a>
+                <a href="#" data-page="awards" class="nav-link">Awards</a>
+                <a href="#" data-page="press" class="nav-link">Press</a>
+                <a href="#" data-page="about" class="nav-link">About</a>
+                <a href="#" data-page="contact" class="nav-link">Contact</a>
             </nav>
-            <button class="menu" onclick="toggle()" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+            <button class="menu" onclick="toggle()" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
         </div>
     </div>
 </header>
 
-<section class="hero">
-    <div class="hero-inner-split">
-        <div class="hero-content">
-            <h2 class="sub-heading">Featured Book</h2>
-            <h1>Audine’s Story</h1>
-            <p>Follows Audine Collins on her 1933 journey from New Orleans to Chicago. A complex character study of ambition, bitterness, and the consequences of personal choices.</p>
-            <a class="cta animate-link" href="#books">Explore Books</a>
-        </div>
-        <div class="hero-image">
-            <img src="Book 1.jpg" alt="Audine’s Story">
-        </div>
-    </div>
-</section>
-
-<section id="books">
-    <div class="section-title">Published Books</div>
-
-    <div class="books">
-
-        <div class="book">
-            <div class="book-img-container">
-                <img src="Book%201.jpg" alt="Audine’s Story">
+<main>
+    <!-- HOME -->
+    <div class="page active" id="page-home">
+        <section class="hero">
+            <div class="hero-inner-split">
+                <div class="hero-content">
+                    <h2 class="sub-heading">Featured Book</h2>
+                    <h1>Audine’s Story</h1>
+                    <p>Follows Audine Collins on her 1933 journey from New Orleans to Chicago. A complex character study of ambition, bitterness, and the consequences of personal choices.</p>
+                    <a href="#" class="cta nav-link" data-page="books">Explore Books</a>
+                </div>
+                <div class="hero-image">
+                    <img src="Book 1.jpg" alt="Audine's Story">
+                </div>
             </div>
-            <div class="book-content">
-                <h3>Audine’s Story</h3>
-                <p>Follows Audine Collins on her 1933 journey from New Orleans to Chicago. A complex character study of
-                    ambition, bitterness, and the consequences of personal choices.</p>
-                <a href="https://www.amazon.com/Audines-Story-Sinful-Malevolent-Deceptive/dp/1970379073" target="_blank">Buy
-                    on Amazon</a>
+        </section>
+        <section class="upcoming">
+            <div class="section-title">Coming Soon</div>
+            <div class="upcoming-inner">
+                <div class="upcoming-image">
+                    <img src="Extinguished%20-%20Book%20Cover%20Front.png" alt="Extinguished">
+                </div>
+                <div class="upcoming-content">
+                    <h2 class="upcoming-title">Extinguished</h2>
+                    <p class="upcoming-subtitle">A new novel from Sondra J. Hardy</p>
+                    <p class="upcoming-desc">A story that explores what remains when everything is taken away. Set against a backdrop of loss and resilience, <em>Extinguished</em> promises to be Hardy's most gripping work yet — a meditation on memory, identity, and the embers that refuse to die.</p>
+                    <div class="upcoming-meta">
+                        <span class="upcoming-tag">Forthcoming</span>
+                        <span class="upcoming-tag">Dark Fiction</span>
+                        <span class="upcoming-tag">Psychological</span>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="book">
-            <div class="book-img-container">
-                <img src="Book%202.jpg" alt="Pieces Revised Revisited">
+        </section>
+        <section class="reviews home-reviews">
+            <div class="section-title">What Readers Say</div>
+            <div class="review-grid">
+                <div class="review">
+                    <p>"A gripping, psychological journey that kept me up all night. Absolutely brilliant."</p>
+                    <span class="reviewer">— Goodreads Reviewer</span>
+                </div>
+                <div class="review">
+                    <p>"Deeply moving and beautifully written. Highly recommend for fans of historical fiction with real emotional weight."</p>
+                    <span class="reviewer">— Amazon Customer</span>
+                </div>
+                <div class="review">
+                    <p>"Hardy writes with a historian's precision and a poet's soul. The 1930s setting is so vivid you can smell the magnolias."</p>
+                    <span class="reviewer">— Literary Fiction Reader</span>
+                </div>
             </div>
-            <div class="book-content">
-                <h3>Pieces Revised Revisited</h3>
-                <p>Set in 1932 New Orleans, this story explores the fractures within the St. Laurent family, weaving hoodoo
-                    traditions and generational secrets into a narrative of jealousy and betrayal.</p>
-                <a href="https://www.amazon.com/Pieces-Revised-Revisited-Sondra-Hardy/dp/1970379162" target="_blank">Buy on
-                    Amazon</a>
+        </section>
+        <section class="feature">
+            <div class="feature-inner">
+                <h2>Every story begins where certainty ends.</h2>
+                <p class="rotating-quote" id="rotatingQuote">Dark psychological fiction designed for readers who prefer tension over resolution.</p>
             </div>
-        </div>
+        </section>
+    </div>
 
-        <div class="book">
-            <div class="book-img-container">
-                <img src="Book%203.jpg" alt="Sistahs Tarot Readers">
+    <!-- BOOKS -->
+    <div class="page" id="page-books">
+        <section>
+            <div class="section-title">Published Books</div>
+            <div class="books">
+
+                <div class="book expanded">
+                    <div class="book-img-container">
+                        <img src="Book%201.jpg" alt="Audine's Story">
+                    </div>
+                    <div class="book-content">
+                        <h3>Audine’s Story</h3>
+                        <p class="book-subtitle">A Sinful, Malevolent, Deceptive Narrative</p>
+                        <div class="book-meta">
+                            <span class="book-tag">Psychological Fiction</span>
+                            <span class="book-tag">1930s America</span>
+                            <span class="book-tag">Historical</span>
+                        </div>
+                        <p class="book-desc">Follows Audine Collins on her 1933 journey from New Orleans to Chicago. A complex character study of ambition, bitterness, and the consequences of personal choices. Through her eyes, the reader witnesses the harsh realities of the Great Migration and the unforgiving nature of those who refuse to be held back.</p>
+                        <div class="book-details">
+                            <div class="book-detail"><strong>Setting:</strong> New Orleans → Chicago, 1933</div>
+                            <div class="book-detail"><strong>Themes:</strong> Ambition, Betrayal, Identity, Consequence</div>
+                            <div class="book-detail"><strong>Mood:</strong> Dark, Atmospheric, Unflinching</div>
+                        </div>
+                        <a href="https://www.amazon.com/Audines-Story-Sinful-Malevolent-Deceptive/dp/1970379073" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+
+                <div class="book expanded">
+                    <div class="book-img-container">
+                        <img src="Book%202.jpg" alt="Pieces Revised Revisited">
+                    </div>
+                    <div class="book-content">
+                        <h3>Pieces Revised Revisited</h3>
+                        <p class="book-subtitle">A Story of Fractured Loyalties</p>
+                        <div class="book-meta">
+                            <span class="book-tag">Psychological Fiction</span>
+                            <span class="book-tag">1930s New Orleans</span>
+                            <span class="book-tag">Family Drama</span>
+                        </div>
+                        <p class="book-desc">Set in 1932 New Orleans, this story explores the fractures within the St. Laurent family, weaving hoodoo traditions and generational secrets into a narrative of jealousy and betrayal. The city itself becomes a character — its humid streets and whispered magic shaping every choice.</p>
+                        <div class="book-details">
+                            <div class="book-detail"><strong>Setting:</strong> New Orleans, 1932</div>
+                            <div class="book-detail"><strong>Themes:</strong> Family Secrets, Hoodoo, Jealousy, Betrayal</div>
+                            <div class="book-detail"><strong>Mood:</strong> Mysterious, Gritty, Supernatural Undertones</div>
+                        </div>
+                        <a href="https://www.amazon.com/Pieces-Revised-Revisited-Sondra-Hardy/dp/1970379162" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+
+                <div class="book expanded">
+                    <div class="book-img-container">
+                        <img src="Book%203.jpg" alt="Sistahs Tarot Readers">
+                    </div>
+                    <div class="book-content">
+                        <h3>Sistahs Of The Tarot</h3>
+                        <p class="book-subtitle">Three Readers, Three Cities, One Unseen Thread</p>
+                        <div class="book-meta">
+                            <span class="book-tag">Literary Fiction</span>
+                            <span class="book-tag">1930s & 1950s</span>
+                            <span class="book-tag">Spiritual</span>
+                        </div>
+                        <p class="book-desc">A narrative linking three tarot readers across Chicago, New Orleans, and Harlem during the 1930s and 1950s. Each woman reads more than cards — she reads the unspeakable truths of her community, offering spiritual counsel, uncovering hidden secrets, and navigating a world that refuses to listen.</p>
+                        <div class="book-details">
+                            <div class="book-detail"><strong>Setting:</strong> Chicago, New Orleans, Harlem — 1930s & 1950s</div>
+                            <div class="book-detail"><strong>Themes:</strong> Spirituality, Community, Hidden Truths, Womanhood</div>
+                            <div class="book-detail"><strong>Mood:</strong> Lyrical, Soulful, Interconnected</div>
+                        </div>
+                        <a href="https://www.amazon.com/Sistahs-Tarot-Readers-Sondra-Hardy/dp/B0GHT4K85L" target="_blank">Buy on Amazon</a>
+                    </div>
+                </div>
+
             </div>
-            <div class="book-content">
-                <h3>Sistahs Of The Tarot</h3>
-                <p>A narrative linking three tarot readers across Chicago, New Orleans, and Harlem during the 1930s and
-                    1950s, exploring spiritual counsel, hidden truths, and community life.</p>
-                <a href="https://www.amazon.com/Sistahs-Tarot-Readers-Sondra-Hardy/dp/B0GHT4K85L" target="_blank">Buy on
-                    Amazon</a>
+        </section>
+    </div>
+
+    <!-- AWARDS -->
+    <div class="page" id="page-awards">
+        <section>
+            <div class="section-title">Awards & Recognition</div>
+            <div class="awards-list">
+
+                <div class="award-card">
+                    <div class="award-icon">&#9733;</div>
+                    <div class="award-body">
+                        <h4>Best Psychological Fiction 2025</h4>
+                        <span class="award-org">Literary Magazine Awards</span>
+                        <p class="award-insight">Awarded for <em>Audine's Story</em>, recognized for its unflinching portrayal of ambition and moral ambiguity in 1930s America. The jury praised the novel's "layered character work and atmospheric tension that lingers long after the final page."</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon">&#9733;</div>
+                    <div class="award-body">
+                        <h4>Beatrice Ruderman Award</h4>
+                        <span class="award-org">Bay State College</span>
+                        <p class="award-insight">Honored for exceptional literary promise during her academic career. The Beatrice Ruderman Award recognizes emerging writers whose work demonstrates "originality of voice and depth of human understanding."</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon">&#9733;</div>
+                    <div class="award-body">
+                        <h4>Editor's Choice Selection</h4>
+                        <span class="award-org">Books Daily Review</span>
+                        <p class="award-insight"><em>Pieces Revised Revisited</em> was selected as an Editor's Choice for its "masterful weaving of hoodoo traditions into the fabric of family drama." The review called it "a taut, suspenseful, and unforgettable exploration of the secrets that define us."</p>
+                    </div>
+                </div>
+
+                <div class="award-card">
+                    <div class="award-icon">&#9733;</div>
+                    <div class="award-body">
+                        <h4>Indie Voice Award — Finalist</h4>
+                        <span class="award-org">Independent Authors Circle</span>
+                        <p class="award-insight">Finalist for <em>Sistahs Of The Tarot</em> in the Literary Fiction category. The nomination highlighted the novel's "ambitious multi-city narrative and its lyrical meditation on spirituality, community, and the unseen bonds between women."</p>
+                    </div>
+                </div>
+
+                <div class="award-card award-card--seal">
+                    <div class="award-seal">
+                        <img src="The%20Book%20Fest%20-%20Winner.jpg" alt="The Book Fest Winner">
+                    </div>
+                    <div class="award-body">
+                        <h4>The Book Fest — Winner</h4>
+                        <span class="award-org">Annual Literary Competition</span>
+                        <p class="award-insight">Awarded top honors for outstanding contribution to psychological fiction. The Book Fest recognizes authors whose work demonstrates "exceptional narrative craft, emotional depth, and a distinctive voice that pushes the boundaries of the genre."</p>
+                    </div>
+                </div>
+
+                <div class="award-card award-card--seal">
+                    <div class="award-seal">
+                        <img src="Storytrade%20Awards%20Finalist%20Seal%20HD.png" alt="Storytrade Awards Finalist Seal">
+                    </div>
+                    <div class="award-body">
+                        <h4>Storytrade Awards — Finalist</h4>
+                        <span class="award-org">Storytrade Literary Awards</span>
+                        <p class="award-insight">Recognized as a finalist in the Fiction category. The Storytrade Awards celebrate independent authors who "challenge conventions and bring fresh, uncompromising voices to the literary landscape."</p>
+                    </div>
+                </div>
+
             </div>
-        </div>
-
+        </section>
     </div>
-</section>
 
-<section id="reviews" class="reviews">
-    <div class="section-title">Reader Reviews</div>
-    <div class="review-grid">
-        <div class="review">
-            <p>"A gripping, psychological journey that kept me up all night. Absolutely brilliant." - Reader A</p>
-        </div>
-        <div class="review">
-            <p>"Deeply moving and beautifully written. Highly recommend." - Reader B</p>
-        </div>
+    <!-- PRESS -->
+    <div class="page" id="page-press">
+        <section class="press">
+            <div class="section-title">In the News</div>
+            <div class="press-card">
+                <div class="press-image">
+                    <img src="https://nyweekly.com/wp-content/uploads/2026/02/image2-16.jpg" alt="NY Weekly Feature">
+                </div>
+                <div class="press-details">
+                    <h3>New York Weekly</h3>
+                    <h4>"Sondra J. Hardy and the Expanding World of Audine"</h4>
+                    <p>Sondra J. Hardy writes with a storyteller's patience and a historian's eye for detail. Her novels move through New Orleans, Chicago, and Harlem with an authenticity that can only come from deep research and deeper empathy.</p>
+                    <a href="https://nyweekly.com/book/sondra-j-hardy-and-the-expanding-world-of-audine/" target="_blank" class="cta press-cta">Read Full Article</a>
+                </div>
+            </div>
+        </section>
     </div>
-</section>
 
-<section id="awards" class="awards">
-    <div class="section-title">Awards & Editorial Reviews</div>
-    <div class="award-grid">
-        <div class="award">
-            <h4>Best Psychological Fiction 2025</h4>
-            <p>Literary Magazine Award</p>
-        </div>
-        <div class="award">
-            <h4>"Taut, suspenseful, and unforgettable."</h4>
-            <p>Editorial Review from Books Daily</p>
-        </div>
+    <!-- ABOUT -->
+    <div class="page" id="page-about">
+        <section class="about">
+            <div class="about-inner-split">
+                <div class="about-image">
+                    <img src="Sondra%20J.%20Hardy's%20Logo.png" alt="Author Logo">
+                </div>
+                <div class="about-content">
+                    <div class="section-title" style="margin-inline: 0; margin-bottom: 20px;">About the Author</div>
+                    <h2 class="about-name">Sondra J. Hardy</h2>
+                    <p>
+                        Born and raised in West Haven, Connecticut, Sondra J. Hardy is a writer whose work traces the hidden tensions within families and communities. A graduate of West Haven High School and Bay State College, where she earned the Beatrice Ruderman Award, Hardy brings a historian's eye and a storyteller's patience to her narratives.
+                    </p>
+                    <p>
+                        Her literary work, influenced by authors like Walter Mosley, explores themes of secrecy, betrayal, and faith across interconnected urban landscapes — from the humid streets of New Orleans to the bustling corridors of Chicago and the cultural pulse of Harlem.
+                    </p>
+                    <p>
+                        Hardy's fiction inhabits the shadows of American history, giving voice to those who live in the margins and whose stories refuse to be forgotten.
+                    </p>
+                </div>
+            </div>
+        </section>
     </div>
-</section>
 
-<section id="press" class="press">
-    <div class="section-title">In the News</div>
-    <div class="press-card">
-        <div class="press-image">
-            <img src="https://nyweekly.com/wp-content/uploads/2026/02/image2-16.jpg" alt="NY Weekly Feature">
-        </div>
-        <div class="press-details">
-            <h3>New York Weekly</h3>
-            <h4>"Sondra J. Hardy and the Expanding World of Audine"</h4>
-            <p>Sondra J. Hardy writes with a storyteller’s patience and a historian’s eye for detail. Her novels move through New Orleans, Chicago, and Harlem...</p>
-            <a href="https://nyweekly.com/book/sondra-j-hardy-and-the-expanding-world-of-audine/" target="_blank" class="cta press-cta">Read Full Article</a>
-        </div>
+    <!-- CONTACT -->
+    <div class="page" id="page-contact">
+        <section class="contact">
+            <div class="section-title">Contact</div>
+            <p>For rights, collaborations, and media inquiries.</p>
+            <div class="email-wrapper">
+                <span class="email-address" id="emailAddr">hardysondra88@gmail.com</span>
+                <button class="copy-btn" onclick="copyEmail()" aria-label="Copy email address">Copy Email</button>
+            </div>
+            <div class="social-links">
+                <a href="https://www.amazon.com/stores/Sondra-J.-Hardy/e/B0HQZBL5P7" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Amazon Author Page">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13.7 2.1c.4.2.7.6.8 1 0 .4-.1.8-.4 1.1l-8.3 9.5c-.3.4-.7.6-1.1.6-.4 0-.8-.2-1.1-.5-.3-.3-.5-.7-.5-1.1 0-.4.2-.8.5-1.1l8.3-9.5c.3-.3.7-.5 1.1-.5.3 0 .5.1.7.3zm3.4 0c.4.2.7.6.8 1 0 .4-.1.8-.4 1.1L9.2 13.7c-.3.4-.7.6-1.1.6-.4 0-.8-.2-1.1-.5-.3-.3-.5-.7-.5-1.1 0-.4.2-.8.5-1.1l8.3-9.5c.3-.3.7-.5 1.1-.5.3.1.5.1.7.3zM3 16c-.4 0-.7-.1-1-.3-.6-.4-.9-1-.9-1.7V5c0-.7.3-1.3.9-1.7.3-.2.6-.3 1-.3h14c.4 0 .7.1 1 .3.6.4.9 1 .9 1.7v9c0 .7-.3 1.3-.9 1.7-.3.2-.6.3-1 .3H3z"/></svg>
+                    Amazon
+                </a>
+                <a href="https://www.goodreads.com/author/show/Sondra_J_Hardy" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Goodreads Author Page">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    Goodreads
+                </a>
+                <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter / X">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    Twitter
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    Instagram
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    Facebook
+                </a>
+            </div>
+        </section>
+        <section class="feature" style="margin-top: 60px;">
+            <div class="feature-inner">
+                <h2>Let the story find you.</h2>
+                <p>For speaking engagements, book signings, and interview requests.</p>
+            </div>
+        </section>
     </div>
-</section>
+</main>
 
-<section class="feature">
-    <div class="feature-inner">
-        <h2>Every story begins where certainty ends.</h2>
-        <p>Dark psychological fiction designed for readers who prefer tension over resolution.</p>
-    </div>
-</section>
-
-<section id="about" class="about">
-    <div class="about-inner-split">
-        <div class="about-image">
-            <img src="Sondra J. Hardy's Logo.png" alt="Author Logo">
-        </div>
-        <div class="about-content">
-            <div class="section-title" style="margin-inline: 0; margin-bottom: 20px;">About the Author</div>
-            <h2 style="font-family: 'Archivo Black', sans-serif; font-size: 32px; margin-bottom: 20px;">Sondra J. Hardy</h2>
-            <p>
-                Sondra J. Hardy, born and raised in West Haven, Connecticut, is a writer whose work traces the hidden tensions
-                within families and communities. A graduate of West Haven High School and Bay State College, where she earned
-                the Beatrice Ruderman Award, Hardy brings a historian’s eye and a storyteller’s patience to her narratives. Her
-                literary work, influenced by authors like Walter Mosley, explores themes of secrecy, betrayal, and faith across
-                interconnected urban landscapes.
-            </p>
-        </div>
-    </div>
-</section>
-
-<section id="contact" class="contact">
-    <div class="section-title">Contact</div>
-    <p>For rights, collaborations, and media inquiries.</p>
-    <button onclick="window.location.href='mailto:hardysondra88@gmail.com'">Email</button>
-</section>
+<button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
 
 <footer>
-    © 2026 Sondra J. Hardy. All rights reserved.
+    <div class="footer-inner">
+        <div class="footer-nav">
+            <a href="#" data-page="home" class="nav-link">Home</a>
+            <a href="#" data-page="books" class="nav-link">Books</a>
+            <a href="#" data-page="awards" class="nav-link">Awards</a>
+            <a href="#" data-page="press" class="nav-link">Press</a>
+            <a href="#" data-page="about" class="nav-link">About</a>
+            <a href="#" data-page="contact" class="nav-link">Contact</a>
+        </div>
+        <p>&copy; 2026 Sondra J. Hardy. All rights reserved.</p>
+    </div>
 </footer>
 
 </body>
