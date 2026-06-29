@@ -454,9 +454,15 @@ section{
   letter-spacing: 1px;
 }
 
+.book-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+}
+
 .book a{
   display:inline-block;
-  margin-top:auto;
   padding: 8px 18px;
   background: var(--cyan);
   color: #000;
